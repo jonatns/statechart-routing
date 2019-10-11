@@ -57,7 +57,7 @@ export const wizardMachine = history =>
           };
         }),
         historyPush: (_, e) => {
-          history.push(`/${e.page}`);
+          history.push(`/wizard/${e.page}`);
         },
         historyPop: (_, { historyBack } = { historyBack: false }) => {
           if (historyBack) {
